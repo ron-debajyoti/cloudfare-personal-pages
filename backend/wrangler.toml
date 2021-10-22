@@ -1,7 +1,7 @@
 name = "cloudfare-my-pages"
 type = "javascript"
 zone_id = ""
-account_id = ""
+account_id = "17e74cdc6c52ebb606f03ee21de047b9"
 route = ""
 workers_dev = true
 compatibility_date = "2021-10-21"
