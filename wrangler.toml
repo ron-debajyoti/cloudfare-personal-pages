@@ -10,3 +10,7 @@ compatibility_date = "2021-10-21"
 command = "npm install && npm run build"
 [build.upload]
 format = "service-worker"
+kv_namespaces = [ 
+	 { binding = "postsCollection", id = "1143caf3da3f44bc9e3fd332069b74b1" }
+]
+
