@@ -16,7 +16,7 @@ const handleGetRequest = async () => {
   const { keys } = await APP_POSTS.list<string>();
   const postsList = await Promise.all(keys.map(async key => {
     const post = await getCache(key.name);
-    return post;
+    if (post) return JSON.parse(post);
   }));
   return new Response(JSON.stringify(postsList), {
     status: 200,
