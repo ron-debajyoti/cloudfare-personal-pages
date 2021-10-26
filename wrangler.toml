@@ -5,8 +5,12 @@ account_id = "17e74cdc6c52ebb606f03ee21de047b9"
 route = ""
 workers_dev = true
 compatibility_date = "2021-10-21"
+kv_namespaces = [ 
+	{ binding = "APP_POSTS", preview_id = "4bd8a76e8c8c407aa3f169dd241f5b43" }
+]
 
 [build]
 command = "npm install && npm run build"
 [build.upload]
 format = "service-worker"
+
