@@ -3,7 +3,7 @@ interface Profile {
   userid: number;
 }
 
-interface Post{
+interface Post {
   title: string;
   username: string;
   content: string;
