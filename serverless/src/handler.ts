@@ -22,7 +22,10 @@ const handleGetRequest = async () => {
   );
   return new Response(JSON.stringify(postsList), {
     status: 200,
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:3000',
+      'Content-Type': 'application/json',
+    },
   });
 };
 
@@ -33,7 +36,13 @@ const handlePostRequest = async (req: Request) => {
 
   if (contentType.includes('application/json')) {
     return insertCache({ body, id }).then(() => {
-      return new Response(`Post submitted successfully !`, { status: 200 });
+      return new Response(`Post submitted successfully !`, {
+        status: 200,
+        headers: {
+          'Access-Control-Allow-Origin': 'http://localhost:3000',
+          'Content-Type': 'application/json',
+        },
+      });
     });
   }
   return new Response(null, { status: 404 });
