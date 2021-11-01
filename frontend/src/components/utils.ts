@@ -1,4 +1,4 @@
-const url = "https://cloudfare-my-pages.rondebajyoti.workers.dev/posts";
+const url = "http://localhost:8787/posts";
 
 const getPosts = async () =>
   fetch(url, {

@@ -4,6 +4,7 @@ interface Profile {
 }
 
 interface Post {
+  id: string;
   title: string;
   username: string;
   content: string;

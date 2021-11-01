@@ -1,0 +1,8 @@
+.post-widgets-list {
+  display: flexbox;
+}
+
+.header-main {
+  border: 1em solid white;
+  margin: 5vh;
+}

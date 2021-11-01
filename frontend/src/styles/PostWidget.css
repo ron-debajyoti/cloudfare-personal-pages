@@ -1,0 +1,18 @@
+
+.widget-post {
+  display: flex;
+  border: 7px ridge rgba(2, 1, 49, 0.6);
+  margin: 1vh;
+  text-align: start;
+  flex-direction: column;
+}
+
+.post-content {
+  padding: 1vh;
+  margin: 1px;
+}
+
+.post-username, .post-title {
+  padding-left: 1vh;
+  margin: 1px;
+}

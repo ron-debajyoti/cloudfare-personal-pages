@@ -32,6 +32,7 @@ const handleGetRequest = async () => {
 const handlePostRequest = async (req: Request) => {
   const body: Post = await req.json();
   const id: string = uuid();
+  body.id = id;
   const contentType = (await req.headers.get('content-type')) || '';
 
   if (contentType.includes('application/json')) {

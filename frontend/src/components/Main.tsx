@@ -4,6 +4,8 @@
 
 import React, { useState, useEffect } from "react";
 import { getPosts } from "./utils";
+import PostWidget from "./PostWidget";
+import "../styles/Main.css";
 
 const Main = () => {
   const [posts, setPosts] = useState([]);
@@ -19,9 +21,13 @@ const Main = () => {
 
   console.log(posts);
   return (
-    <div>
-      <h2> Social Cloud </h2>
-      <div className="posts-widgets-list"></div>
+    <div className="page-main">
+      <h2 className="header-main"> Social Cloud </h2>
+      <div className="posts-widgets-list">
+        {posts.map((post) => (
+          <PostWidget {...post} />
+        ))}
+      </div>
     </div>
   );
 };
